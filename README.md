@@ -23,3 +23,8 @@ Explore US Bikeshare Data
 * You should have Python 3, NumPy, and pandas installed using Anaconda
 * A text editor, like Sublime or Atom.
 * A terminal application (Terminal on Mac and Linux or Cygwin on Windows)
+
+### Useful Links
+* [Anaconda](https://www.anaconda.com/)
+* [Sublime](https://www.sublimetext.com/)
+* [Atom](https://atom.io/)
