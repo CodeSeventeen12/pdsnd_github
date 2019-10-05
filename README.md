@@ -15,6 +15,11 @@ Explore US Bikeshare Data
 3. new_york_city.csv
 
 ### Credits
-[Printing Rows using iloc](https://www.geeksforgeeks.org/python-extracting-rows-using-pandas-iloc/)
-[Using Datetime function](https://docs.python.org/3/library/datetime.html)
-[Extracting values](https://stackoverflow.com/questions/35523635/extract-values-in-pandas-value-counts)
+1. [Printing Rows using iloc](https://www.geeksforgeeks.org/python-extracting-rows-using-pandas-iloc/)
+2. [Using Datetime function](https://docs.python.org/3/library/datetime.html)
+3. [Extracting values](https://stackoverflow.com/questions/35523635/extract-values-in-pandas-value-counts)
+
+### Requirements
+* You should have Python 3, NumPy, and pandas installed using Anaconda
+* A text editor, like Sublime or Atom.
+* A terminal application (Terminal on Mac and Linux or Cygwin on Windows)
