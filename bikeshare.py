@@ -1,5 +1,4 @@
 import time
-import numpy as np
 import pandas as pd
 CITY_DATA = { 'chicago': pd.read_csv('chicago.csv'),
               'new york city': pd.read_csv('new_york_city.csv'),
@@ -100,7 +99,7 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
     print('\nCalculating The Most Frequent Times of Travel...\n')
-    start_time = time.time()
+    start_time = time.time() # For displaying time taken
 
     # display the most common month
     common_month = df['month'].mode()
@@ -125,17 +124,17 @@ def station_stats(df):
     start_time = time.time()
 
     # display most commonly used start station
-    common_start_station = df['Start Station'].mode()
-    print('Most popular Start Station : ',common_start_station)
+    popular_start_station = df['Start Station'].mode()
+    print('Most popular Start Station : ',popular_start_station)
 
     # display most commonly used end station
-    common_end_station = df['End Station'].mode()
-    print('Most popular End Station : ',common_end_station)
+    popular_end_station = df['End Station'].mode()
+    print('Most popular End Station : ',popular_end_station)
 
     # display most frequent combination of start station and end station trip
     df['Start_And_End_Station'] = df['Start Station'] + ' , ' + df['End Station']
-    common_startend = df['Start_And_End_Station'].mode()
-    print('Most Frequent trips are between : ', common_startend)
+    popular_start_and_end_station = df['Start_And_End_Station'].mode()
+    print('Most Frequent trips are between : ',popular_start_and_end_station)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
