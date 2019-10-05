@@ -1,5 +1,4 @@
 import time
-import numpy as np
 import pandas as pd
 CITY_DATA = { 'chicago': pd.read_csv('chicago.csv'),
               'new york city': pd.read_csv('new_york_city.csv'),
@@ -100,7 +99,7 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
     print('\nCalculating The Most Frequent Times of Travel...\n')
-    start_time = time.time()
+    start_time = time.time() # For displaying time taken
 
     # display the most common month
     common_month = df['month'].mode()
